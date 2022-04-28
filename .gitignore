@@ -1,0 +1,16 @@
+# Our databases should never be stored on git, even during testing
+*.db
+
+# Meant for sqlite3.exe for anybody using that to work with sqlite3
+*.exe
+
+# Ignore sqlite3 on Linux
+sqlite3
+sqldiff
+sqlite3_analyzer
+
+# Don't add node_modules to git
+node_modules/
+
+# Don't add backups folder to git (will be automatically generated as needed)
+backups/

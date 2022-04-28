@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- 180×180 -->
+  <meta name="theme-color" content="#c1f4f5">
+  <title>Log In | Southern Charm Events Calendar</title>
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--LOGIN SCREEN-->
+  <div class="loginContainer">
+    <div class="loginScreen">
+      <div class="loginBox">
+        <img id="sceLogoLogin" src="images/sceLogo.webp" height="75" alt="Southern Charm Events logo">
+        <h2 class="loginTitle">Southern Charm Events</h2>
+        <noscript>Please enable JavaScript to use Southern Charm Events Calendar.</noscript>
+        <input class="loginInput" type="text" name="user_email" id="user_email" placeholder="Email...">
+        <br>
+        <input class="loginInput" type="password" name="user_pass" id="user_pass" placeholder="Password...">
+        <div class="centeredButtons">
+          <button class="blueButton" id="loginButton">Login</button>
+          <!--sign up will be removed in final version-->
+          <button class="blueButton signUpButton" id="signUpButton">Sign Up</button>
+          <a href="resetPassword.html"><button id="resetPasswordButton" class="redButton">Reset Password</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="login.js"></script>
+</body>
+
+</html>
